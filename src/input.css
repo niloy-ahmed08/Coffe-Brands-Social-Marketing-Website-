@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl:1170px;
+  --color-primary: #1821e4;
+  --color-secndary:#1bc931;
+  --color-bg:#191919;
+ --font-pacifo:"Pacifico", cursive;
+}
+nav li {
+  line-height: 20px;
+}
+@utility container{
+  margin:auto;
+  padding-inline: 20px;
+
+}
+u{
+  background-image: url("../img/burger.png");
+  background-image: url("../img/Steps.png");
+  background-image: url(../img/c8012a094e9103cd1d64db6364e5deb51ad8905e.png);
+  background-image: url(../img/Steps\ container.png);
+
+  background-image: url(../img/Footer.png);
+}
+@utility btn{
+  @apply py-5 px-12.5 bg-white text-black rounded-full
+}
+.menu-li li{
+  @apply cursor-pointer py-2 px-5 text-white  border-b-4 border-transparent
+}
+
+.menu-li li:hover{
+  @apply border-b-4 border-yellow-100 rounded-[10px] text-red-500 font-bold
+}
